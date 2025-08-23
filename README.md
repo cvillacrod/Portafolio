@@ -2,7 +2,7 @@
 
 Este proyecto es un portafolio personal, desarrollado como una página web adaptable a distintos tamaños de pantalla.
 
-Su objetivo es mostrar mi portafolio de proyectos, mi experiencia profesional y formas de contacto.
+El objetivo es mostrar mi portafolio de proyectos, mi experiencia profesional y formas de contacto.
 
 ## Tecnologías
 
