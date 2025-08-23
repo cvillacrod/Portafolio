@@ -1,36 +1,12 @@
-# Portafolio Adaptable (Responsive) con Bootstrap 5
+# Portafolio Cristina Villacastin
 
-Este proyecto creado para un curso publicado en el canal de YouTube de freeCodeCamp es una página web adaptable a dispositivos de distintos tamaños (este tipo de sitio web se conoce en inglés como "responsive"). 
+Este proyecto es un portafolio personal, desarrollado como una página web adaptable a distintos tamaños de pantalla.
 
-El propósito de esta página web es mostrar el portafolio de proyectos de un(a) desarrollador(a) y su experiencia. Incluye una descripción breve de su motivación, experiencia, proyectos, artículos publicados y formas de contacto. 
-
-También incluye imágenes alternativas en la carpeta `imagenes` en caso de que se desee personalizar la imagen principal del desarrollador. 
-
-### Capturas de pantalla:
-
-Primera parte de la página web:
-
-![Primera parte de la página web](imagenes/readme/screenshot1.png)
-
-Experiencia:
-
-![Experiencia](imagenes/readme/screenshot2.png)
-
-Proyectos:
-
-![Proyectos](imagenes/readme/screenshot3.png)
-
-Testimonios:
-
-![Testimonios](imagenes/readme/screenshot4.png)
-
-Contacto:
-
-![Contacto](imagenes/readme/screenshot5.png)
+Su objetivo es mostrar mi portafolio de proyectos, mi experiencia profesional y formas de contacto.
 
 ## Tecnologías
 
-Esta página web fue creada con:
+Esta página web fue creada utilizando:
 
 * HTML
 * CSS
@@ -41,13 +17,9 @@ Además, se incluyeron **Google Fonts** para personalizar la fuente y **Bootstra
 
 ## Español
 
-El texto de la página web está escrito en español, al igual que las clases y atributos personalizados. Las clases relacionadas con Bootstrap se incluyeron en inglés.
+Todo el contenido y los textos de la página están en español. Las clases personalizadas siguen este idioma, mientras que las clases de Bootstrap permanecen en inglés.
 
 ## Proyecto en vivo
 
-Puedes acceder al proyecto en vivo en: https://estefaniacn.github.io/portafolio-adaptable-bootstrap/
+🔗 Puedes ver el proyecto en vivo aquí: [Portafolio Cristina Villacastin](https://portafoliocristinavillacastin.netlify.app/)
 
-
-## Curso en YouTube
-
-Para crear este proyecto paso a paso te invito a tomar el curso de forma gratuita en el canal de YouTube de [freeCodeCamp en Español](https://www.youtube.com/freecodecampespanol).
