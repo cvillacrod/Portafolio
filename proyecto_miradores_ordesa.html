@@ -3,44 +3,272 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página en construcción</title>
+  <title>Proyecto | Gestión Miradores 4x4</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <style>
-    body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8f9fa;
-      text-align: center;
-    }
-    .construccion {
-      max-width: 600px;
-    }
-    .construccion i {
-      font-size: 4rem;
-      color: #0d6efd;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="construccion">
-    <i class="bi bi-tools"></i>
-    <h1 class="mb-3">Página en construcción</h1>
-    <p class="lead text-muted">Estoy trabajando para ofrecer pronto esta sección con todos los detalles.</p>
-    
-    <!-- Botones de acción -->
-    <div class="text-center mt-5">
+<body class="seccion-clara">
+
+  <!-- Proyecto: Gestión Miradores 4x4 -->
+  <div class="container">
+    <!-- Cabecera -->
+    <div class="row align-items-center mb-4">
       
-      <a href="index.html#proyectos" class="btn btn-outline-secondary">
-        <i class="bi bi-arrow-left-circle" style="font-size: 1rem"></i> Volver al portafolio
-      </a>
+      <!-- Título del proyecto -->
+      <h1 class="text-center mb-4">Gestión Miradores 4x4</h1>
+      <p class="text-center lead">Aplicación web de gestión de reservas para excursiones en taxi 4x4 en Ordesa</p>
+      <!-- Descripción -->
+      <p class="lead mb-0">
+        <p> Plataforma web a medida para la gestión de excursiones en <strong>taxi 4x4 (hasta 8 plazas)</strong> dentro del Parque Nacional de Ordesa. 
+        El sistema centraliza la <strong>venta de excursiones</strong>, el <strong>planning diario</strong>, la <strong>gestión de taxistas y clientes</strong> y la <strong>contabilidad</strong>. </p>
+
+        <p> La aplicación permite asignar clientes y excursiones a los 6 taxistas disponibles, optimizando la ocupación de vehículos y mostrando 
+        un planning visual diario de reservas. Cada taxista cuenta con acceso restringido a su propia agenda, orden de asignación y contabilidad. </p>
+
+        <p> Gracias a esta solución, la empresa puede coordinar de forma ágil las excursiones, controlar la caja y mantener un registro completo de clientes y operaciones. </p>
+      </p> 
+
+      <div class="text-center mt-4">
+        <a href="https://gestionmiradoresordesa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+          <i class="bi bi-globe2 me-1"></i> Acceso privado
+        </a>
+      </div>
+
     </div>
 
+    <!-- Páginas del sitio -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-layers me-2"></i> Estructura principal
+      </div>
+      <div class="card-body">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item badge text-bg-secondary mb-2">Inicio</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Planning de reservas</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Venta de excursiones</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Clientes</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Taxistas</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Excursiones ofertadas</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Orden de asignación</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Contabilidad</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Funcionalidades -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-plug me-2"></i> Funcionalidades principales
+      </div>
+      <div class="card-body">
+        <div class="accordion" id="pluginMiradores">
+          <!-- Gestión de reservas -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-reservas">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c-reservas" aria-expanded="true" aria-controls="c-reservas">
+                <i class="bi bi-list-check me-2"></i> Gestión de reservas
+              </button>
+            </h2>
+            <div id="c-reservas" class="accordion-collapse collapse show" aria-labelledby="h-reservas" data-bs-parent="#pluginMiradores">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Listado de reservas diarias con buscador de fechas.</li>
+                  <li>Asignación de clientes y excursiones a taxistas.</li>
+                  <li>Gestión de ocupación (hasta 8 plazas por taxi).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planning visual -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-planning">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-planning" aria-expanded="false" aria-controls="c-planning">
+                <i class="bi bi-calendar3-week me-2"></i> Planning visual diario
+              </button>
+            </h2>
+            <div id="c-planning" class="accordion-collapse collapse" aria-labelledby="h-planning" data-bs-parent="#pluginMiradores">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Vista de todas las reservas asignadas por taxista.</li>
+                  <li>Buscador para cambiar de fecha.</li>
+                  <li>Colores y estados para identificar disponibilidad.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gestión -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-gestion">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-gestion" aria-expanded="false" aria-controls="c-gestion">
+                <i class="bi bi-people me-2"></i> Gestión de clientes, taxistas y excursiones
+              </button>
+            </h2>
+            <div id="c-gestion" class="accordion-collapse collapse" aria-labelledby="h-gestion" data-bs-parent="#pluginMiradores">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Base de datos completa de clientes.</li>
+                  <li>Gestión de taxistas: alta, edición y modificación.</li>
+                  <li>Gestión de excursiones ofertadas con detalles y precios.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contabilidad -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-conta">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-conta" aria-expanded="false" aria-controls="c-conta">
+                <i class="bi bi-cash-stack me-2"></i> Contabilidad
+              </button>
+            </h2>
+            <div id="c-conta" class="accordion-collapse collapse" aria-labelledby="h-conta" data-bs-parent="#pluginMiradores">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Registro de ingresos diarios, semanales, mensuales y anuales.</li>
+                  <li>Panel de control global para la administración.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Acceso de taxistas -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-taxistas">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-taxistas" aria-expanded="false" aria-controls="c-taxistas">
+                <i class="bi bi-person-badge me-2"></i> Acceso de taxistas (perfil restringido)
+              </button>
+            </h2>
+            <div id="c-taxistas" class="accordion-collapse collapse" aria-labelledby="h-taxistas" data-bs-parent="#pluginMiradores">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Cada taxista ve solo su planning diario.</li>
+                  <li>Acceso de solo lectura a orden de asignación.</li>
+                  <li>Acceso de solo lectura a la contabilidad.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div><!-- /accordion -->
+      </div>
+    </div>
+
+    <!-- Stack técnico -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-cpu me-2"></i> Stack técnico
+      </div>
+      <div class="card-body">
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-primary">PHP</span>
+          <span class="badge text-bg-primary">MySQL</span>
+          <span class="badge text-bg-primary">HTML/CSS</span>
+          <span class="badge text-bg-primary">JavaScript (jQuery)</span>
+          <span class="badge text-bg-primary">Ajax</span>
+          <span class="badge text-bg-primary">Bootstrap 5</span>
+          <span class="badge text-bg-primary">MVC</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Galería de capturas -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-images me-2"></i> Capturas del proyecto “Gestión Miradores 4x4” (código propietario, solo pantallas de uso)
+      </div>
+      <div class="card-body">
+        <div class="row g-3">
+
+          <!-- Login -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/login.jpg" class="img-fluid rounded" alt="Pantalla de acceso">
+            <small class="d-block mt-1 text-muted">Pantalla de inicio / Login</small>
+          </div>
+
+          <!-- Planning diario (admin) -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/planning.jpg" class="img-fluid rounded" alt="Planning diario">
+            <small class="d-block mt-1 text-muted">Planning diario (vista administración)</small>
+          </div>
+
+          <!-- Nueva reserva -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/nueva_reserva.jpg" class="img-fluid rounded" alt="Formulario de nueva reserva">
+            <small class="d-block mt-1 text-muted">Formulario de venta de excursión</small>
+          </div>
+
+          <!-- Listado de excusiones -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/bbdd.jpg" class="img-fluid rounded" alt="Gestión de excusiones">
+            <small class="d-block mt-1 text-muted">Listado de excursiones</small>
+          </div>
+
+          <!-- Contabilidad -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/contabilidad.jpg" class="img-fluid rounded" alt="Panel de contabilidad">
+            <small class="d-block mt-1 text-muted">Panel de contabilidad (admin)</small>
+          </div>
+
+          <!-- Opcional: orden de asignación -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/orden_asignacion.jpg" class="img-fluid rounded" alt="Orden de asignación">
+            <small class="d-block mt-1 text-muted">Orden de asignación de excursiones</small>
+          </div>
+
+          
+          <!-- Opcional: vista de taxista -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="imagenes/capturas/miradores/agenda_taxi.jpg" class="img-fluid rounded" alt="Planning de taxista">
+            <small class="d-block mt-1 text-muted">Vista restringida de taxista (su planning)</small>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Resultado / Valor -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-graph-up-arrow me-2"></i> Resultado
+      </div>
+      <div class="card-body">
+        <ul class="mb-0">
+          <li>Optimización de la gestión diaria de excursiones y reservas.</li>
+          <li>Transparencia en la asignación de clientes a taxistas.</li>
+          <li>Accesos diferenciados para administración y taxistas.</li>
+          <li>Control de caja centralizado y accesible en todo momento.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="mailto:c.villacastin.roda@gmail.com" class="btn btn-info btn-lg">
+        <i class="bi bi-envelope-check-fill me-2"></i>¿Quieres algo así para tu negocio?
+      </a>
+    </div>
   </div>
-    
-  
+  <!-- Botones de acción -->
+  <div class="text-center mt-5">
+    <a href="https://gestionmiradoresordesa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+      <i class="bi bi-globe2 me-1"></i> Acceso privado
+    </a>
+
+    <a href="index.html#proyectos" class="btn btn-outline-secondary">
+      <i class="bi bi-arrow-left-circle"></i> Volver al portafolio
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
