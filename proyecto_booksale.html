@@ -3,44 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página en construcción</title>
+  <title>Proyecto | BOOKSALE</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <style>
-    body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8f9fa;
-      text-align: center;
-    }
-    .construccion {
-      max-width: 600px;
-    }
-    .construccion i {
-      font-size: 4rem;
-      color: #0d6efd;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="construccion">
-    <i class="bi bi-tools"></i>
-    <h1 class="mb-3">Página en construcción</h1>
-    <p class="lead text-muted">Estoy trabajando para ofrecer pronto esta sección con todos los detalles.</p>
-    
-    <!-- Botones de acción -->
-    <div class="text-center mt-5">
+<body class="seccion-clara">
+
+  <!-- Proyecto: BOOKSALE -->
+  <div class="container">
+    <!-- Cabecera -->
+    <div class="row align-items-center mb-4">
+      <h1 class="text-center mb-4">BOOKSALE</h1>
+      <p class="text-center lead">Aplicación móvil para intercambio y compraventa de libros</p>
       
-      <a href="index.html#proyectos" class="btn btn-outline-secondary">
-        <i class="bi bi-arrow-left-circle" style="font-size: 1rem"></i> Volver al portafolio
-      </a>
+      <p class="lead mb-0">
+        <p><strong>BOOKSALE</strong> es una aplicación Android desarrollada para facilitar el <strong>intercambio y la compraventa de libros</strong> entre estudiantes y exalumnos.</p>
+
+        <p>Hasta ahora este proceso se realizaba manualmente mediante carteles en tablones de anuncios. Con esta app, los usuarios pueden <strong>buscar, publicar y gestionar libros</strong> de manera sencilla desde su móvil.</p>
+
+        <p>El sistema integra <strong>filtros de búsqueda, chat entre usuarios, gestión de perfil y notificaciones</strong>, ofreciendo una experiencia más rápida, organizada y segura.</p>
+      </p>
     </div>
 
+    <!-- Estructura principal -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-layers me-2"></i> Estructura principal
+      </div>
+      <div class="card-body">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item badge text-bg-secondary mb-2">Login / Registro</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Menú principal</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Buscar libro</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Publicar libro</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Mis libros</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Historial / Chats</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Menú usuario</li>
+          <li class="list-inline-item badge text-bg-secondary mb-2">Perfil</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Funcionalidades -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-plug me-2"></i> Funcionalidades principales
+      </div>
+      <div class="card-body">
+        <div class="accordion" id="pluginBooksale">
+          <!-- Buscar libros -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-buscar">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c-buscar" aria-expanded="true" aria-controls="c-buscar">
+                <i class="bi bi-search me-2"></i> Buscar libros
+              </button>
+            </h2>
+            <div id="c-buscar" class="accordion-collapse collapse show" aria-labelledby="h-buscar" data-bs-parent="#pluginBooksale">
+              <div class="accordion-body">
+                <ul>
+                  <li>Filtros por título, ciclo, módulo, estado y precio.</li>
+                  <li>Listado de libros disponibles ordenados por fecha de publicación.</li>
+                  <li>Acceso directo al chat con el propietario del libro.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publicar libros -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-publicar">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-publicar" aria-expanded="false" aria-controls="c-publicar">
+                <i class="bi bi-journal-plus me-2"></i> Publicar libros
+              </button>
+            </h2>
+            <div id="c-publicar" class="accordion-collapse collapse" aria-labelledby="h-publicar" data-bs-parent="#pluginBooksale">
+              <div class="accordion-body">
+                <ul>
+                  <li>Formulario de publicación con ISBN, título, edición, ciclo y módulo.</li>
+                  <li>Subida opcional de la portada del libro.</li>
+                  <li>Gestión del estado: en venta, vendido, modificado o eliminado.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mis libros -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-mislibros">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-mislibros" aria-expanded="false" aria-controls="c-mislibros">
+                <i class="bi bi-collection me-2"></i> Mis libros
+              </button>
+            </h2>
+            <div id="c-mislibros" class="accordion-collapse collapse" aria-labelledby="h-mislibros" data-bs-parent="#pluginBooksale">
+              <div class="accordion-body">
+                <ul>
+                  <li>Listado de libros propios con estado visual (verde = en venta, rojo = vendidos).</li>
+                  <li>Opciones para editar, vender o eliminar libros.</li>
+                  <li>Chat con los interesados en cada publicación.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chats e historial -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-chats">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-chats" aria-expanded="false" aria-controls="c-chats">
+                <i class="bi bi-chat-dots me-2"></i> Chats e historial
+              </button>
+            </h2>
+            <div id="c-chats" class="accordion-collapse collapse" aria-labelledby="h-chats" data-bs-parent="#pluginBooksale">
+              <div class="accordion-body">
+                <ul>
+                  <li>Historial de conversaciones filtrado por libros propios o de otros usuarios.</li>
+                  <li>Notificaciones de mensajes no leídos.</li>
+                  <li>Chat individual en tiempo real gracias a Firebase.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Usuario -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h-usuario">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-usuario" aria-expanded="false" aria-controls="c-usuario">
+                <i class="bi bi-person-circle me-2"></i> Gestión de usuario
+              </button>
+            </h2>
+            <div id="c-usuario" class="accordion-collapse collapse" aria-labelledby="h-usuario" data-bs-parent="#pluginBooksale">
+              <div class="accordion-body">
+                <ul>
+                  <li>Registro y edición de perfil (nombre, apellidos, teléfono, contraseña).</li>
+                  <li>Baja de usuario con eliminación de libros asociados.</li>
+                  <li>Cierre de sesión seguro.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- /accordion -->
+      </div>
+    </div>
+
+    <!-- Stack técnico -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-cpu me-2"></i> Stack técnico
+      </div>
+      <div class="card-body">
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-primary">Android Studio (Java)</span>
+          <span class="badge text-bg-primary">PHP</span>
+          <span class="badge text-bg-primary">MySQL</span>
+          <span class="badge text-bg-primary">Firebase (Mensajería)</span>
+          <span class="badge text-bg-primary">MVC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resultado / Valor -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="bi bi-graph-up-arrow me-2"></i> Resultado
+      </div>
+      <div class="card-body">
+        <ul class="mb-0">
+          <li>Digitalización de un proceso que antes era manual en tablones de anuncios.</li>
+          <li>Mayor visibilidad y rapidez en la búsqueda de libros.</li>
+          <li>Conexión directa entre compradores y vendedores con chat en tiempo real.</li>
+          <li>Mejor organización y experiencia para los estudiantes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="mailto:c.villacastin.roda@gmail.com" class="btn btn-info btn-lg">
+        <i class="bi bi-envelope-check-fill me-2"></i>¿Quieres algo así para tu app?
+      </a>
+    </div>
   </div>
-    
-  
+
+  <!-- Botón volver -->
+  <div class="text-center mt-5">
+    <a href="index.html#proyectos" class="btn btn-outline-secondary">
+      <i class="bi bi-arrow-left-circle"></i> Volver al portafolio
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
